@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikigai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        
+         .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #007BFF;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            display: none;
+            margin-top: 20px;
+        }
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">Team</a>
+        <a href="#services">Weekly Update</a>
+        <a href="#projects">Literature Review</a>
+        <a href="#blog">Components Details</a>
+
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <h1>Literature Review</h1>
+    </div>
+    
+
+    <!-- Buttons -->
+    <button onclick="showPDF('hasib.pdf')">Hasibul Hasan</button>
+    <button onclick="showPDF('memo.pdf')">Mukut Protim Memo</button>
+    <button onclick="showPDF('Sristy.pdf')">Sristy Roy</button>
+    <button onclick="showPDF('fahim-litrev.pdf')">Mostofa Fahim Hasan</button>
+<h1>Literature Review Summary</h1>
+    <button onclick="showPDF('S1.pdf')">Hasibul Hasan</button>
+    <button onclick="showPDF('S2.pdf')">Mukut Protim Memo</button>
+    <button onclick="showPDF('S3.pdf')">Sristy Roy</button>
+    <button onclick="showPDF('S4.pdf')">Mostofa Fahim Hasan</button>
+<h1>Summary </h1>
+    <button onclick="showPDF('Summary.pdf')">Summary</button>
+    <!-- PDF Viewer -->
+    <iframe id="pdfViewer"></iframe>
+
+    <script>
+        function showPDF(pdfFile) {
+            const pdfViewer = document.getElementById('pdfViewer');
+            pdfViewer.style.display = 'block';
+            pdfViewer.src = pdfFile;
+        }
+    </script>
+</body>
+</html>
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Ikigai. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
