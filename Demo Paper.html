@@ -88,7 +88,17 @@
         <img src="path-to-your-image.png" alt="Adaptive technology image" style="width:50%; height:auto;">
     </div>
     <button onclick="showPDF('Robotics_Project_Paper11.pdf')">IEEE</button>
-    <button onclick="showPDF('.pdf')">Springer</button>
+    <button onclick="showPDF('Springer.pdf')">Springer</button>
+    <!-- PDF Viewer -->
+    <iframe id="pdfViewer"></iframe>
+
+    <script>
+        function showPDF(pdfFile) {
+            const pdfViewer = document.getElementById('pdfViewer');
+            pdfViewer.style.display = 'block';
+            pdfViewer.src = pdfFile;
+        }
+    </script>
     <!-- Footer -->
     <div class="footer">
         <p>&copy; 2024 Ikigai. All rights reserved.</p>
